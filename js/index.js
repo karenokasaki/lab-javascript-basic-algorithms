@@ -1,5 +1,3 @@
-// Iteration 1: Names and Input
-
 let hacker1 = 'karen'
 console.log(`The driver's name is ${hacker1}`)
 
@@ -53,6 +51,20 @@ if ( hacker1.length > navigator.length) {
 // option 1 
 const myArr = hacker1.split("")
 console.log(myArr.join(" ").toUpperCase())
+
+// option 2 - without using .join()
+spaceAndUpper(hacker1)
+
+function spaceAndUpper (pessoa) {
+    let newPessoa = ''
+
+    for (let i = 0 ; i < pessoa.length; i++) {
+        let letter = pessoa.charAt(i).toUpperCase() + " "
+        newPessoa += letter
+    } 
+    console.log(newPessoa)
+}
+
 
 //3.2
 function inverter(name){
@@ -129,5 +141,3 @@ function checkPalindrome (check) {
     }
 
 } 
-
-
